@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(206, 68, 68), rgb(118, 60, 233));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 2500px black;
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgb(255, 0, 0);
+    transform: rotate(45deg);
+    top: 20px;
+    right: 20px;
+    transition: all 0.3s ease;
+}
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 100%;
+}
+.heart:before {
+    left: -15px;
+}
+
+.heart:after {
+    top: -15px;
+}
+.flower-image {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background: url(pngwing.com.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+    text-align: center;
+}
